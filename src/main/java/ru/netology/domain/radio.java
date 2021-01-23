@@ -31,36 +31,23 @@ public class radio {
         if (numberStation > lastNumberStation) {
             this.numberStation = firstNumberStation;
             return;
-        }
+                    }
+
         if (numberStation < firstNumberStation) {
             this.numberStation = lastNumberStation;
             return;
         }
-         this.numberStation = numberStation;
+
+        this.numberStation = numberStation;
     }
 
     public void nextNumberStation() {
-        if (numberStation == lastNumberStation) {
-            numberStation = firstNumberStation;
-            return;
-        }
-                            numberStation++;
-
+        numberStation++;
     }
-        public void prevNumberStation() {
-            if (numberStation == lastNumberStation){
-                numberStation = firstNumberStation;
-                return;
-            }
-            numberStation--;
-        }
-        public int getFirstNumberStation() {
-            return firstNumberStation;
-        }
 
-        public int getLastNumberStation() {
-            return lastNumberStation;
-        }
+    public void prevNumberStation() {
+        numberStation--;
+            }
     public void setSoundLevel(int soundLevel) {
         if (soundLevel > maxSoundLevel) {
             this.soundLevel = maxSoundLevel;
@@ -70,17 +57,15 @@ public class radio {
             this.soundLevel = minSoundLevel;
             return;
         }
-            this.soundLevel = soundLevel;
+        this.soundLevel = soundLevel;
     }
 
     public void nextSoundLevel() {
-        if (soundLevel == maxSoundLevel)
-         return;
+
         soundLevel++;
     }
+
     public void prevSoundLevel() {
-        if (soundLevel == minSoundLevel)
-            return;
-        soundLevel--;
+               soundLevel--;
     }
 }
