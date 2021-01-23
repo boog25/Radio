@@ -31,7 +31,7 @@ public class radio {
         if (numberStation > lastNumberStation) {
             this.numberStation = firstNumberStation;
             return;
-                    }
+        }
 
         if (numberStation < firstNumberStation) {
             this.numberStation = lastNumberStation;
@@ -47,7 +47,8 @@ public class radio {
 
     public void prevNumberStation() {
         numberStation--;
-            }
+    }
+
     public void setSoundLevel(int soundLevel) {
         if (soundLevel > maxSoundLevel) {
             this.soundLevel = maxSoundLevel;
@@ -66,6 +67,6 @@ public class radio {
     }
 
     public void prevSoundLevel() {
-               soundLevel--;
+        soundLevel--;
     }
 }
