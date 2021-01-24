@@ -6,6 +6,9 @@ public class Radio {
     private int soundLevel;
     private int firstNumberStation = 0;
     private int lastNumberStation = 9;
+    private int minSoundLevel = 0;
+    private int maxSoundLevel = 10;
+
 
     public int getSoundLevel() {
         return soundLevel;
@@ -18,12 +21,7 @@ public class Radio {
     public int getMaxSoundLevel() {
         return maxSoundLevel;
     }
-
-    private int minSoundLevel = 0;
-    private int maxSoundLevel = 10;
-
     public int getNumberStation() {
-
         return numberStation;
     }
 
@@ -42,10 +40,12 @@ public class Radio {
     }
 
     public void nextNumberStation() {
+
         numberStation++;
     }
 
     public void prevNumberStation() {
+
         numberStation--;
     }
 
