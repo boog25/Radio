@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class radioTest {
-    radio radio = new radio();
+class RadioTest {
+    Radio radio = new Radio();
 
     @Test
     void numberStation() {
