@@ -57,10 +57,10 @@ public class Radio {
     }
 
     public void prevNumberStation() {
-            if (numberStation == firstNumberStation) {
-                numberStation = lastNumberStation;
-                return;
-            }
+        if (numberStation == firstNumberStation) {
+            numberStation = lastNumberStation;
+            return;
+        }
         numberStation--;
     }
 

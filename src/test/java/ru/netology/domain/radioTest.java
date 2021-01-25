@@ -42,6 +42,7 @@ class RadioTest {
         radio.prevNumberStation();
         assertEquals(9, radio.getNumberStation());
     }
+
     @Test
     void MaxNumberStation() {
         radio.setNumberStation(-1);
@@ -73,6 +74,7 @@ class RadioTest {
         radio.prevSoundLevel();
         assertEquals(7, radio.getSoundLevel());
     }
+
     @Test
     void nextSoundLevel() {
         radio.setSoundLevel(9);
@@ -86,7 +88,7 @@ class RadioTest {
         radio.setSoundLevel(1);
         radio.prevSoundLevel();
         radio.prevSoundLevel();
-         assertEquals(0, radio.getSoundLevel());
+        assertEquals(0, radio.getSoundLevel());
     }
 
     @Test
@@ -100,12 +102,14 @@ class RadioTest {
         radio.setSoundLevel(-1);
         assertEquals(radio.getMinSoundLevel(), radio.getSoundLevel());
     }
+
     @Test
     void maximumSoundLevel() {
         radio.setSoundLevel(10);
 
         assertEquals(radio.getMaxSoundLevel(), radio.getSoundLevel());
     }
+
     @Test
     void minimumSoundLevel() {
         radio.setSoundLevel(0);
