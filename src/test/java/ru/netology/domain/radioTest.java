@@ -10,8 +10,8 @@ class RadioTest {
 
     @Test
     public void radioNumber() {
-        Radio radio = new Radio(9, 10, 0, 10, 0, 100);
-        assertEquals(10, radio.getLastNumberStation());
+        Radio radio = new Radio(10, 10, 0, 10, 0, 100);
+        assertEquals(10, radio.getNumberStation());
     }
 
     @Test
@@ -30,9 +30,9 @@ class RadioTest {
 
     @Test
     void decreaseNumberStation() {
-        Radio radio = new Radio(0, 10, 0, 10, 0, 100);
-        radio.prevNumberStation();
-        assertEquals(10, radio.getNumberStation());
+        Radio radio = new Radio(-1, 10, 0, 10, 0, 100);
+        radio.nextNumberStation();
+        assertEquals(0, radio.getNumberStation());
     }
 
     @Test
@@ -66,6 +66,7 @@ class RadioTest {
     @Test
     void prevSoundLevel() {
         Radio radio = new Radio(9, 1, 0, 10, 0, 100);
+        radio.prevSoundLevel();
         radio.prevSoundLevel();
         radio.prevSoundLevel();
         assertEquals(0, radio.getSoundLevel());

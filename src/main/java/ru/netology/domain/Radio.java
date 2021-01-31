@@ -18,24 +18,8 @@ public class Radio {
         this.maxSoundLevel = maxSoundLevel;
     }
 
-    public int getFirstNumberStation() {
-        return firstNumberStation;
-    }
-
-    public int getLastNumberStation() {
-        return lastNumberStation;
-    }
-
     public int getSoundLevel() {
         return soundLevel;
-    }
-
-    public int getMinSoundLevel() {
-        return minSoundLevel;
-    }
-
-    public int getMaxSoundLevel() {
-        return maxSoundLevel;
     }
 
     public int getNumberStation() {
@@ -48,14 +32,6 @@ public class Radio {
             return;
         }
         numberStation++;
-    }
-
-    public void prevNumberStation() {
-        if (numberStation == firstNumberStation) {
-            numberStation = lastNumberStation;
-            return;
-        }
-        numberStation--;
     }
 
     public void nextSoundLevel() {
