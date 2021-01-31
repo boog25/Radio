@@ -9,6 +9,14 @@ public class Radio {
     private int minSoundLevel = 0;
     private int maxSoundLevel = 10;
 
+    public Radio(int numberStation, int soundLevel, int firstNumberStation, int lastNumberStation, int minSoundLevel, int maxSoundLevel) {
+        this.numberStation = numberStation;
+        this.soundLevel = soundLevel;
+        this.firstNumberStation = firstNumberStation;
+        this.lastNumberStation = lastNumberStation;
+        this.minSoundLevel = minSoundLevel;
+        this.maxSoundLevel = maxSoundLevel;
+    }
 
     public int getFirstNumberStation() {
         return firstNumberStation;
