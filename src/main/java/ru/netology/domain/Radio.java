@@ -42,20 +42,6 @@ public class Radio {
         return numberStation;
     }
 
-    public void setNumberStation(int numberStation) {
-        if (numberStation > lastNumberStation) {
-            this.numberStation = firstNumberStation;
-            return;
-        }
-
-        if (numberStation < firstNumberStation) {
-            this.numberStation = lastNumberStation;
-            return;
-        }
-
-        this.numberStation = numberStation;
-    }
-
     public void nextNumberStation() {
         if (numberStation == lastNumberStation) {
             numberStation = firstNumberStation;
@@ -70,18 +56,6 @@ public class Radio {
             return;
         }
         numberStation--;
-    }
-
-    public void setSoundLevel(int soundLevel) {
-        if (soundLevel > maxSoundLevel) {
-            this.soundLevel = maxSoundLevel;
-            return;
-        }
-        if (soundLevel < minSoundLevel) {
-            this.soundLevel = minSoundLevel;
-            return;
-        }
-        this.soundLevel = soundLevel;
     }
 
     public void nextSoundLevel() {

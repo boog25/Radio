@@ -29,13 +29,6 @@ class RadioTest {
     }
 
     @Test
-    void prevNumberStation() {
-        Radio radio = new Radio(9, 10, 0, 10, 0, 100);
-        radio.prevNumberStation();
-        assertEquals(8, radio.getNumberStation());
-    }
-
-    @Test
     void decreaseNumberStation() {
         Radio radio = new Radio(0, 10, 0, 10, 0, 100);
         radio.prevNumberStation();
